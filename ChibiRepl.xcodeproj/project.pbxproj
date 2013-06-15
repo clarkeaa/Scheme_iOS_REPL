@@ -28,6 +28,7 @@
 		437EE65D176D130A0065F056 /* sexp.c in Sources */ = {isa = PBXBuildFile; fileRef = 437EE656176D130A0065F056 /* sexp.c */; };
 		437EE65E176D130A0065F056 /* simplify.c in Sources */ = {isa = PBXBuildFile; fileRef = 437EE657176D130A0065F056 /* simplify.c */; };
 		437EE65F176D130A0065F056 /* vm.c in Sources */ = {isa = PBXBuildFile; fileRef = 437EE658176D130A0065F056 /* vm.c */; };
+		437EE662176D30600065F056 /* filesystem.c in Sources */ = {isa = PBXBuildFile; fileRef = 437EE661176D30600065F056 /* filesystem.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +67,8 @@
 		437EE656176D130A0065F056 /* sexp.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sexp.c; sourceTree = "<group>"; };
 		437EE657176D130A0065F056 /* simplify.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = simplify.c; sourceTree = "<group>"; };
 		437EE658176D130A0065F056 /* vm.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = vm.c; sourceTree = "<group>"; };
+		437EE661176D30600065F056 /* filesystem.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = filesystem.c; sourceTree = "<group>"; };
+		437EE663176D309C0065F056 /* filesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = filesystem.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +150,7 @@
 		437EE64A176D130A0065F056 /* chibi */ = {
 			isa = PBXGroup;
 			children = (
+				437EE660176D30600065F056 /* lib */,
 				437EE64B176D130A0065F056 /* bignum.c */,
 				437EE64C176D130A0065F056 /* eval.c */,
 				437EE64D176D130A0065F056 /* gc.c */,
@@ -177,6 +181,15 @@
 				437EE654176D130A0065F056 /* sexp.h */,
 			);
 			path = chibi;
+			sourceTree = "<group>";
+		};
+		437EE660176D30600065F056 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				437EE661176D30600065F056 /* filesystem.c */,
+				437EE663176D309C0065F056 /* filesystem.h */,
+			);
+			path = lib;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,6 +271,7 @@
 				437EE65D176D130A0065F056 /* sexp.c in Sources */,
 				437EE65E176D130A0065F056 /* simplify.c in Sources */,
 				437EE65F176D130A0065F056 /* vm.c in Sources */,
+				437EE662176D30600065F056 /* filesystem.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

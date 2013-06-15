@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import <chibi/eval.h>
+#import "chibi/lib/filesystem.h"
 #import "SingleSexpServer.h"
 #import "SingleSexpServerDelegate.h"
 
@@ -50,6 +51,7 @@
     _ctx = sexp_make_eval_context(NULL, NULL, NULL, 0, 0);
     sexp_load_standard_env(_ctx, NULL, SEXP_SEVEN);
     sexp_load_standard_ports(_ctx, NULL, stdin, _outpipe, _outpipe, 1);
+    sexp_init_filesystem(_ctx);
 }
 
 - (void)didReceiveMemoryWarning
